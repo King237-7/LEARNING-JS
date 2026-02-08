@@ -1,0 +1,101 @@
+body{
+    background: 
+    linear-gradient(rgba(12, 12, 12, 0.6), rgba(0, 0, 0, 0.6)),
+    url("img1.jpg")
+    ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+ 
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1{
+    margin: 10px;
+    color: white;
+}
+
+h2{
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+button{
+    border: none;
+    padding-top: 10px;
+}
+
+.btn-container{
+    display: flex;
+
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#increment-btn, #save-btn, #reset-btn{
+    background-color: brown;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    flex: 1;
+}
+
+#increment-btn:hover{
+    cursor: pointer;
+    background-color: rgb(150, 0, 0);
+    transition: background-color 0.3s ease;
+    transform: scale(1.1);
+}
+
+#increment-btn:active{
+    background-color: rgb(200, 0, 0);
+    transform: scale(0.9);
+}
+
+#save-btn{
+    background-color:rgb(0, 150, 0);;
+    
+}
+
+#save-btn:hover{
+    cursor: pointer;
+    background-color: rgb(0, 128, 0);;
+    transition: background-color 0.3s ease;
+    transform: scale(1.1);
+}
+
+#save-btn:active{
+    background-color: rgb(1, 173, 1);;
+    transform: scale(0.9);
+}
+
+#save-el{
+    color: white;
+    font-size: 18px;
+}
+
+#reset-btn{
+    background-color:  rgb(0, 0, 150);
+}
+
+#reset-btn:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 116);
+    transition: background-color 0.3s ease;
+    transform: scale(1.1);
+}
+
+#reset-btn:active{
+   transform: scale(0.9);
+    background-color: rgb(0, 0, 201);
+}
