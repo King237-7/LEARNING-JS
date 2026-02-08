@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    background-image: url(img/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-size: x-large;
+    gap: 0px;
+    margin: 0;
+}
+
+h1, h2, p{
+    margin: 15px;
+}
+h1{
+    color: goldenrod;
+}
+
+#message-el{
+    font-style: italic;
+
+}
+
+button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    min-width: 150px;
+    white-space: nowrap;
+    color: #016f32;
+    width: 150px;
+    background: goldenrod;
+    border-radius: 3px;
+    padding: 8px 40px;
+    font-size: large;
+    border: none;
+    font-weight: bold;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(197, 141, 0);
+    transition: background-color 0.3s ease;
+    transform: scale(1.1);
+}
+
+button:active{
+    background-color: rgb(240, 182, 36);
+    transform: scale(0.9);
+    transition: scale 0.3s ease;
+}
