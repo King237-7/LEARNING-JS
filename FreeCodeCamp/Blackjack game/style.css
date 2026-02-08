@@ -45,6 +45,7 @@ button{
     font-size: large;
     border: none;
     font-weight: bold;
+    flex: 1;
 }
 
 button:hover{
@@ -58,4 +59,9 @@ button:active{
     background-color: rgb(240, 182, 36);
     transform: scale(0.9);
     transition: scale 0.3s ease;
+}
+
+#btn-container{
+    display: flex;
+    gap: 15px;
 }
