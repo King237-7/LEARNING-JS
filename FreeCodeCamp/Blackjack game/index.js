@@ -3,10 +3,17 @@ let cards=[];
 let hasblackjack = false;
 let isalive = false;
 let message = "";
+let player ={
+  name: "Jeremie",
+  chips: 200
+}
 
 let messageEl= document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardEl= document.querySelector("#card-el")
+let playerEl=document.getElementById("player-el")
+
+playerEl.textContent=player.name + ": $" + player.chips;
 
 function startGame(){
   isalive=true;
@@ -37,10 +44,16 @@ function renderGame(){
 }
 
 function newCard() {
-  let card = getRandomCard();
-  sum += card;
-  cards.push(card);
-  renderGame(); 
+  if(isalive && !hasblackjack){
+    let card = getRandomCard();
+    sum += card;
+    cards.push(card);
+    renderGame(); 
+  }
+ else{
+  message ="Click on the 'RESET GAME' to reset values."
+  messageEl.textContent=message;
+ }
 }
 
 
