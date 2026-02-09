@@ -13,7 +13,6 @@
   }
 
   function renderGame(){
-
     for (let i=0; i<cards.length; i++){
         cardEl.textContent+=" "+cards[i];
         
@@ -30,7 +29,6 @@
       message = "You're out of the game!";
       isalive = false;
     }
-    alert(message);
     sumEl.textContent+=" "+sum;
 
     messageEl.textContent = message;
