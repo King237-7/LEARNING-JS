@@ -6,7 +6,7 @@ body{
 
 input {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     padding: 10px;
     box-sizing: border-box;
     border: 1px solid #5f9341;
@@ -28,7 +28,7 @@ button{
     background-color: #5f9341;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 10px 18px;
     font-weight: bold;
     transition: background-color 0.5s ease, transform 0.3s ease;
 }
