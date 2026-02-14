@@ -2,13 +2,29 @@ let myLeads=[]
 const inputEL=document.getElementById("input-el")
 const inputBtn=document.getElementById("input-btn")
 const ulEl= document.getElementById("ul-el")
+const deleteBtn=document.getElementById("delete-btn")
+const leadsFromLocalStorage=JSON.parse(localStorage.getItem("myLeads"))
+
+if(leadsFromLocalStorage){
+    myLeads=leadsFromLocalStorage
+    renderLeads()
+}
+
+deleteBtn.addEventListener("click", function(){
+    ulEl.innerHTML=""
+    localStorage.clear()
+    myLeads=[]
+})
 
 inputBtn.addEventListener("click", function(){
     let url = inputEL.value.trim();
     if (!url.startsWith("http://") && !url.startsWith("https://")) {
-        url = "https://" + url 
+        url = "https://" + url ;
     }
     myLeads.push(url);
+
+    localStorage.setItem("myLeads", JSON.stringify(myLeads));
+
     renderLeads();
     inputEL.value="";
 })

@@ -24,6 +24,12 @@ input:focus {
     box-shadow: 0 0 8px rgba(28, 138, 228, 0.5);
 }
 
+#btn-container{
+    display: flex;
+    flex: 1fr;
+    gap: 8px;
+}
+
 button{
     border-radius: 2px;
     background-color: #5f9341;
@@ -44,6 +50,19 @@ button:active{
     transform: scale(0.9);
 }
 
+#delete-btn{
+    background-color: white;
+    color: #e74c3c;
+    border-color: #e74c3c;
+    border: 1px solid;
+}
+
+#delete-btn:hover{
+    background-color: #e74c3c;
+    color: #ffff;
+    transition: background-color 0,5s ease transform 0.3s ease;
+    border-radius: 2px;
+}
 ul{
     list-style-type: none;
     padding: 0;
