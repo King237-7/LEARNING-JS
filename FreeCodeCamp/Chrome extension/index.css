@@ -42,3 +42,23 @@ button:hover{
 button:active{
     transform: scale(0.9);
 }
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+   margin-top: 5px;
+}
+
+li a /*Only style this to a tag inside li item*/{
+    text-decoration:none;
+    color: #5f9341 ;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #1c8ae4;
+    text-decoration: underline;
+}
