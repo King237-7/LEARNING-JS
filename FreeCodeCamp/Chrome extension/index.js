@@ -4,16 +4,19 @@ const inputBtn=document.getElementById("input-btn")
 const ulEl= document.getElementById("ul-el")
 
 inputBtn.addEventListener("click", function(){
-    
-    myLeads.push(inputEL.value)
-    renderLeads()
-    
+    let url = inputEL.value;
+    if (!url.startsWith("http://") && !url.startsWith("https://")) {
+        url += "https://" 
+    }
+    myLeads.push(url);
+    renderLeads();
+    inputEL.value="";
 })
 
 function renderLeads(){
     let listItems=""
     for (let i=0; i<myLeads.length; i++){
-    listItems += "<li>" + myLeads[i] + "</li>"
+    listItems += "<a href='" +myLeads[i]+ "'  target='_blanck' >"+"<li>" + myLeads[i] + "</li>"+"</a>"
     //    const li=document.createElement("li")
     //    li.textContent=myLeads[i]
     //    ulEl.append(li)
