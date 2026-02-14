@@ -9,6 +9,7 @@
     "description": "A Chrome extension to track leads and save them to local storage.",
     "permissions": [
         "storage",
-        "activeTab"
+        "activeTab",
+        "tabs"
     ]
 }
